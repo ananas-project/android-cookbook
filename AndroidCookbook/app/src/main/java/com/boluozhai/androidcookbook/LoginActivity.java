@@ -98,9 +98,6 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     @Override
     protected void onResume() {
         super.onStart();
-
-        this.getActionBar().hide();
-
     }
 
     private void populateAutoComplete() {

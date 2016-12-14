@@ -3,6 +3,7 @@ package com.boluozhai.androidcookbook;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Adapter;
 import android.widget.AdapterView;
@@ -10,10 +11,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
-import com.boluozhai.androidcookbook.life.LifeBaseActivity;
 
-
-public class MainActivity extends LifeBaseActivity implements AdapterView.OnItemClickListener {
+public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
 
     @Override
@@ -70,7 +69,7 @@ public class MainActivity extends LifeBaseActivity implements AdapterView.OnItem
     }
 
     private Class<?>[] listActivityClasses() {
-        Class<?>[] array = {LoginActivity.class, FragmentDemoActivity.class};
+        Class<?>[] array = {LoginActivity.class, FragmentDemoActivity.class, CameraActivity.class};
         return array;
     }
 
